@@ -1,0 +1,54 @@
+body{
+    background:lightcyan;
+    font-family: sans-serif;
+}
+.inptext{
+    margin-left: 100px;
+}
+.inptext input{
+    font-size:medium;
+    height: 45px;
+    width: 40%;
+    color: black;
+
+}
+.inptext button{
+    background-color: hsl(199, 39%, 49%); 
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+}
+.tablefortodo{
+    margin-left: 100px;
+    font-family: sans-serif;
+    
+}
+.tablefortodo button{
+    background-color:linen; 
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.checkmsg{
+    padding-left: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.updatetodo input{
+    font-size:medium;
+    height: 70px;
+    width: 45%;
+    color: black;
+}
+.updatetodo{
+    margin-left: 100px;
+}
+.updatetodo button{
+    background-color: hsl(173, 39%, 49%); 
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+
+}

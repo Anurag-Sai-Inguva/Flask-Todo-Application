@@ -1,0 +1,17 @@
+<body bgcolor="lightcyan">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <h2>Update your todo here</h2><br><br>
+    <div class="updatetodo">
+    <form action="/update/{{todo.sno}}" method="POST">
+        <h3><label for "title">Update Todo Title</label></h3>
+        <br>
+        <input type="text" name="title" value="{{todo.title}}" placeholder="update your todo title">
+        <br><br><br><br><br><br>
+        <h3><label for "title">Update Todo Description</label></h3>
+        <br>
+        <input type="text" name="Description" value="{{todo.Description}}" placeholder="update your todo description">
+        <br><br><br><br>
+        <button type="submit">Update</button>
+    </form>
+</div>
+</body>

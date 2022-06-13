@@ -1,0 +1,51 @@
+<title>Todo page</title>
+
+<body>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+  <form action="/" method="POST">
+    <div class="inptext">
+   <h3><label for="title">Title of your todo</label></h3>
+    <input type="text" name="title" placeholder="Enter your todo title">
+  <br><br><br>
+   <h3><label for="Description">Description</label></h3> 
+    <input type="text" name="Description" placeholder="Enter your todo description">
+  <br><br><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+  <br>
+</div>
+  {% if alltodo|length==0 %}
+  <div class="checkmsg">
+    <h3>No todo's are present ! add your first todo</h3>
+  </div>
+    {%else%}
+    <div class="tablefortodo">
+      <table class="table" height="50%" border="5%" width="50%">
+        <thead>
+          <tr>
+            <th scope="col" width="1%">Sno</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date Created</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for todo in alltodo %}
+      <tr>
+        <th width="7%">{{loop.index}}</th>
+        <td>{{todo.title}}</td>
+        <td>{{todo.Description}}</td>
+        <td>{{todo.date}}</td>
+        <td>
+         <button><a href="/update/{{todo.sno}}">Update</a></button> 
+          <button><a href="/delete/{{todo.sno}}" type="button">Delete</a></button>
+        </td>
+      </tr>
+      {% endfor %}
+      {%endif%}
+    </tbody>
+  </table>
+
+ </div>
+</body>
