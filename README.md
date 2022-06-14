@@ -25,7 +25,9 @@ Installing flask and sqlalchemy
       
       pip install flask-sqlalchemy
       
-
+**Installing Jinja**
+  
+  ->Be sure to install any jinja2 extension into your code editor
 
 Running flask
 
